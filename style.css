@@ -1,0 +1,45 @@
+#clock {
+    color: white;
+    font-size: 200px;
+    width: 778px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0.1em 0.1em 0 rgb(0 0 0 / 30%);
+    }
+.sec {
+font-size: 100px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    font-size: 1.3em;
+    height: 90vh;
+    background-image: linear-gradient(to right top, black, black, black, black, black);
+}
+h1 {
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    color: #fff;
+    font-size: 150px;
+    font-weight: 400;
+}
+#description {
+  text-align: center;
+  font-size: 30px
+}
+#location {
+  text-align: center;
+}
+#pogoda1 {
+  width: 200px;
+}
+
+#icon {
+    width: 100%;
+}
