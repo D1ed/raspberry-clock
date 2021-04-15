@@ -88,6 +88,7 @@ font-size: 100px;
     overflow: hidden;
     display: none;
 }
+.now {display: none;}
 
 /*
 
@@ -103,6 +104,13 @@ font-size: 100px;
     font-size: 19em;
 }
 .daily {
-    left: 10%;
+    left: 0;
+}
+.now {
+    display: block;
+    text-align: center;
+}
+.now_temp {
+    font-size: 8em;
 }
 }

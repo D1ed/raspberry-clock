@@ -73,6 +73,7 @@ function drawWeather( d ) {
 	
 	document.querySelector('.pogoda_container_description').innerHTML = description;
 	document.querySelector('.pogoda_container-1_temp').innerHTML = celcius + '&deg;';
+  document.querySelector('.now_temp').innerHTML = celcius + '&deg;';
 	document.querySelector('.pogoda_container-1_location').innerHTML = d.name;
   document.querySelector('.pogoda_container_icon').src = 'icons/' + icon + '.png';
   
