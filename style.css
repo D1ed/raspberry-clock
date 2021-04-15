@@ -8,8 +8,12 @@ body {
     text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
     font-size: 1.3em;
     height: 100%;
-    background-image: linear-gradient(to right top, black, black, black, black, black);
+    background-color: black;
     }
+
+p {
+    margin: 0;
+}
 
 #clock {
     color: white;
@@ -61,7 +65,29 @@ font-size: 100px;
     align-items: flex-end;
 }
 
+.hidden {
+    opacity:0;
+}
 
+
+.daily {
+    display: flex;
+    height: 35%;
+    position: absolute;
+    top: 65%;
+}
+
+.daily_now, .daily_tomorrow, .daily_after-tomorrow {
+    width: 33%;
+    text-align: center;
+}
+
+.daily_description-now, .daily_description-tomorrow, .daily_description-after-tomorrow, .daily_description-after-tomorrow-two, .daily_description-after-tomorrow-three, .daily_description-after-tomorrow-four, .daily_description-after-tomorrow-five, .daily_description-after-tomorrow-six{
+    white-space: nowrap;
+    max-width: 128px;
+    overflow: hidden;
+    display: none;
+}
 
 /*
 
