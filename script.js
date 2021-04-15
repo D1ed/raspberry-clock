@@ -79,8 +79,8 @@ function drawWeather( d ) {
 }
 
 
-setInterval(weatherBallonDaily, 300000);
-setInterval(drawWeatherDaily, 300000);
+setInterval(weatherBallonDaily, 3600000);
+setInterval(drawWeatherDaily, 3600000);
 
 
 function weatherBallonDaily() {
