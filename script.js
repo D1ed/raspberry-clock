@@ -41,7 +41,7 @@
 setInterval(weatherBallon, 120000);
 setInterval(drawWeather, 120000);
   	const key = '';
-if(key=='') document.getElementById('temp').innerHTML = ('');
+if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
 
 function weatherBallon( cityID ) {
 	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
@@ -60,11 +60,11 @@ function drawWeather( d ) {
   var description = d.weather[0].description; 
   var icon = d.weather[0].icon;
 	
-	document.getElementById('description').innerHTML = description;
-	document.getElementById('temp').innerHTML = celcius + '&deg;';
-	document.getElementById('location').innerHTML = d.name;
-  document.getElementById('icon').src = 'icons/' + icon + '.png';
-
+	document.querySelector('.pogoda_container_description').innerHTML = description;
+	document.querySelector('.pogoda_container-1_temp').innerHTML = celcius + '&deg;';
+	document.querySelector('.pogoda_container-1_location').innerHTML = d.name;
+  document.querySelector('.pogoda_container_icon').src = 'icons/' + icon + '.png';
+  
 }
 window.onload = function() {
 	weatherBallon( 565778 );

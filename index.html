@@ -6,23 +6,25 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> 
 </head>
 
 <body>
 
-  <section id="clock">
-    <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+  <section class="verstka" id="clock">
+    <span class="hour verstka">hh</span>:<span class="min verstka">mm</span>:<span class="sec verstka">ss</span>
   </section>
 
-  <aside id="pogoda">
-        	<div id="pogoda1">
-	            <div id="description"></div>
-	            <img id="icon" src="">
+  <aside class="pogoda verstka">
+        	<div class="pogoda_container verstka">
+	            <div class="pogoda_container_description verstka"></div>
+	            <img class="pogoda_container_icon verstka"src="">
           	</div>
-          <div id="pogoda2">
-              <h1 id="temp"></h1>
-              <div id="location"></div>
+          <div class="pogoda_container-1 verstka">
+              <h1 class="pogoda_container-1_temp verstka"></h1>
+              <div class="pogoda_container-1_location verstka"></div>
           </div>
   </aside>
 
