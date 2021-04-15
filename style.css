@@ -97,3 +97,12 @@ font-size: 100px;
 
 }
 */
+
+@media screen and (min-width: 1025px) {
+#clock {
+    font-size: 19em;
+}
+.daily {
+    left: 10%;
+}
+}
