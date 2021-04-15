@@ -48,8 +48,8 @@ body.onclick = function() {
 
 
 
-setInterval(weatherBallon, 120000);
-setInterval(drawWeather, 120000);
+setInterval(weatherBallon, 300000);
+setInterval(drawWeather, 300000);
   	const key = '';
 if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
 
@@ -79,8 +79,8 @@ function drawWeather( d ) {
 }
 
 
-setInterval(weatherBallonDaily, 120000);
-setInterval(drawWeatherDaily, 120000);
+setInterval(weatherBallonDaily, 300000);
+setInterval(drawWeatherDaily, 300000);
 
 
 function weatherBallonDaily() {
