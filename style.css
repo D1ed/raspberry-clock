@@ -7,7 +7,7 @@ body {
     margin:0;
     text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
     font-size: 1.3em;
-    height: 90vh;
+    height: 100%;
     background-image: linear-gradient(to right top, black, black, black, black, black);
     }
 
@@ -27,7 +27,7 @@ font-size: 100px;
 
 .pogoda {
     display: flex;
-    height: 44%;
+    height: 35%;
 }
 
 .pogoda_container {
@@ -52,7 +52,7 @@ font-size: 100px;
 .pogoda_container-1_temp {
     width: 100%;
     text-align: left;
-    font-size: 11em;
+    font-size: 9em;
     margin: 0;
 }
 .pogoda_container-1_location {
@@ -63,8 +63,8 @@ font-size: 100px;
 
 
 
-
 /*
+
 .verstka {
     background-color: gray;
     border:3px solid blue;
