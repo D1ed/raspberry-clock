@@ -54,7 +54,7 @@ setInterval(drawWeather, 300000);
 if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
 
 function weatherBallon( cityID ) {
-	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
+	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=be87e75bd8dbab43de74b6b0bc74988f')  
 	.then(function(resp) { return resp.json() }) // Convert data to json
 	.then(function(data) {
 		drawWeather(data);
