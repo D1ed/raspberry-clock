@@ -54,7 +54,7 @@ setInterval(drawWeather, 300000);
 if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
 
 function weatherBallon( cityID ) {
-	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
+	fetch('http://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
 	.then(function(resp) { return resp.json() }) // Convert data to json
 	.then(function(data) {
 		drawWeather(data);
@@ -85,7 +85,7 @@ setInterval(drawWeatherDaily, 3600000);
 
 
 function weatherBallonDaily() {
-  fetch('https://api.openweathermap.org/data/2.5/onecall?lat=58.462970&lon=56.399950&exclude=hourly,minutely' + '&appid=162204f36d92f27a55b386010cb2ccf1')  
+  fetch('http://api.openweathermap.org/data/2.5/onecall?lat=58.462970&lon=56.399950&exclude=hourly,minutely' + '&appid=162204f36d92f27a55b386010cb2ccf1')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeatherDaily(data);
@@ -119,6 +119,7 @@ var arr=[
    'Июля',
    'Августа',
    'Сентября',
+   'Октября',
    'Ноября',
    'Декабря',
 ];
