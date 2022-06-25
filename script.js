@@ -29,6 +29,13 @@ body.onclick = function() {
       let seconds = date.getSeconds();
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
+
+      // let superdata = document.getElementById('YYYYMMDD');
+      // let year = date.getYear()+1900;
+      // let month = date.getMonth()+1;
+      // let day = date.getDate();
+      // superdata.innerHTML = year + ' ' + month + ' ' + day;
+
     }
 
     function clockStart() {
