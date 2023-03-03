@@ -30,14 +30,6 @@ body.onclick = function() {
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
 
-      Let data_now = document.getElementById('data_now')
-      data_now.innerHTML =  date.getMonth()
-
-      // let superdata = document.getElementById('YYYYMMDD');
-      // let year = date.getYear()+1900;
-      // let month = date.getMonth()+1;
-      // let day = date.getDate();
-      // superdata.innerHTML = year + ' ' + month + ' ' + day;
 
     }
 
@@ -61,7 +53,7 @@ body.onclick = function() {
 setInterval(weatherBallon, 300000);
 setInterval(drawWeather, 300000);
   	const key = '';
-if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
+//if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = ('');
 
 function weatherBallon( cityID ) {
 	fetch('http://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
@@ -144,6 +136,9 @@ return time;
 
 
 function drawWeatherDaily( dnew ) {
+
+  let uni_date = dnew.daily[2].dt;
+  document.querySelector('.data_now').innerHTML = convertTimestamp(uni_date);
 
   let uni_date_first = dnew.daily[2].dt;
   document.querySelector('.daily_after-tomorrow_where').innerHTML = convertTimestamp(uni_date_first);
@@ -230,6 +225,9 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_day-after-tomorrow-six').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-six').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_icon-after-tomorrow-six').src = 'icons/' + icon_after_tomorrow_six + '.png';
+
+  let dataNow = document.getElementById('data_now');
+  dataNow.innerHTML =  convertTimestamp(uni_date_first);
 }
 
 window.onload = function() {
