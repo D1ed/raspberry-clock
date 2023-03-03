@@ -32,20 +32,14 @@ body.onclick = function() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of f2c76d1 (сломаный)
 
 
 =======
 >>>>>>> parent of fe9021e (исправлена дата)
-<<<<<<< HEAD
 =======
 >>>>>>> parent of fe9021e (исправлена дата)
 =======
 >>>>>>> parent of fe9021e (исправлена дата)
-=======
->>>>>>> parent of f2c76d1 (сломаный)
     }
 
     function clockStart() {
