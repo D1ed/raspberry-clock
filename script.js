@@ -30,11 +30,8 @@ body.onclick = function() {
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of fe9021e (исправлена дата)
 =======
 >>>>>>> parent of fe9021e (исправлена дата)
     }
