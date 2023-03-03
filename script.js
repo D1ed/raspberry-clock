@@ -29,11 +29,8 @@ body.onclick = function() {
       let seconds = date.getSeconds();
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of fe9021e (исправлена дата)
     }
 
     function clockStart() {
