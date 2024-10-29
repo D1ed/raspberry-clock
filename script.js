@@ -59,7 +59,7 @@ body.onclick = function() {
 
 
 
-/*
+/* старый виджет опервеавер, они удалили прогнозы, сделали платными, поэтому заметил
 function weatherBallon() {
   fetch('https://api.openweathermap.org/data/2.5/weather?id=565778&appid=a061c5cf224dc563e73ce50c27c99bd4')  
   .then(function(resp) { return resp.json() }) // Convert data to json
@@ -156,7 +156,7 @@ function drawWeatherDaily( dnew ) {
 
 
   var celciusnow_day_now = dnew.current.temp_c;
-  var now_icon = dnew.current.temp_c;
+  var now_icon = dnew.current.condition.icon;
   document.querySelector('.now_temp').innerHTML = celciusnow_day_now + '&deg;';
   document.querySelector('.now_icon').src = 'http:' + now_icon;
 
