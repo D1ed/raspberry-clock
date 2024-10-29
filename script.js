@@ -156,8 +156,9 @@ function drawWeatherDaily( dnew ) {
 
 
   var celciusnow_day_now = dnew.current.temp_c;
+  var now_icon = dnew.current.temp_c;
   document.querySelector('.now_temp').innerHTML = celciusnow_day_now + '&deg;';
-
+  document.querySelector('.now_icon').src = 'http:' + now_icon;
 
   var celciusnow_day_tomorrow = dnew.forecast.forecastday[0].day.maxtemp_c;
   var celciusnow_night_tomorrow = dnew.forecast.forecastday[0].day.mintemp_c;
