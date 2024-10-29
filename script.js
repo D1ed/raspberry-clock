@@ -61,8 +61,8 @@ weatherBallon();
 setInterval(weatherBallon, 300000);
 
 
-function weatherBallon( cityID ) {
-  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
+function weatherBallon() {
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=565778&appid=a061c5cf224dc563e73ce50c27c99bd4')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeather(data);
