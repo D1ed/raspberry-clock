@@ -87,7 +87,7 @@ function drawWeather( d ) {
 }
 
 
-
+*/
 
 
 function weatherBallonDaily() {
@@ -102,7 +102,7 @@ function weatherBallonDaily() {
   });
 
 }
-*/
+
 
 function convertTimestamp(timestamp) {
 var d = new Date(timestamp * 1000), // Конвертируем метку в миллисекунды
