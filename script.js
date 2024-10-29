@@ -59,7 +59,7 @@ body.onclick = function() {
 
 
 
-
+/*
 function weatherBallon() {
   fetch('https://api.openweathermap.org/data/2.5/weather?id=565778&appid=a061c5cf224dc563e73ce50c27c99bd4')  
   .then(function(resp) { return resp.json() }) // Convert data to json
@@ -102,7 +102,7 @@ function weatherBallonDaily() {
   });
 
 }
-
+*/
 
 function convertTimestamp(timestamp) {
 var d = new Date(timestamp * 1000), // Конвертируем метку в миллисекунды
@@ -230,11 +230,10 @@ function drawWeatherDaily( dnew ) {
 }
 
 
-weatherBallon();
+
 weatherBallonDaily();
 
-setInterval(weatherBallon, 300000);
-setInterval(weatherBallonDaily, 3600000);
+setInterval(weatherBallonDaily, 500000);
 
 
 
