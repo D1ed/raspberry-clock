@@ -91,7 +91,7 @@ function drawWeather( d ) {
 
 
 function weatherBallonDaily() {
-  fetch('https://api.weatherapi.com/v1/forecast.json?key=1f43449fc0804e9aa56182711242910&q=58.462971,56.399948&days=7&lang=ru')  
+  fetch('http://api.weatherapi.com/v1/forecast.json?key=1f43449fc0804e9aa56182711242910&q=58.462971,56.399948&days=7&lang=ru')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeatherDaily(data);
