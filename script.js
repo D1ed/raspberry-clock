@@ -30,7 +30,7 @@ body.onclick = function() {
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
 
-      Let data_now = document.getElementById('data_now');
+      let data_now = document.getElementById('data_now');
       data_now.innerHTML =  date.getMonth();
 
       // let superdata = document.getElementById('YYYYMMDD');
@@ -93,8 +93,11 @@ function drawWeather( d ) {
 setInterval(weatherBallonDaily, 3600000);
 
 
+
+
+
 function weatherBallonDaily() {
-  fetch('https://api.openweathermap.org/data/2.5/forecast?lat=58.462970&lon=56.399950&appid=a061c5cf224dc563e73ce50c27c99bd4')  
+  fetch('https://api.weatherapi.com/v1/forecast.json?key=1f43449fc0804e9aa56182711242910&q=ramadi,iq&days=6&lang=ar')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeatherDaily(data);
