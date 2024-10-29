@@ -30,8 +30,8 @@ body.onclick = function() {
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
 
-      Let data_now = document.getElementById('data_now')
-      data_now.innerHTML =  date.getMonth()
+      Let data_now = document.getElementById('data_now');
+      data_now.innerHTML =  date.getMonth();
 
       // let superdata = document.getElementById('YYYYMMDD');
       // let year = date.getYear()+1900;
@@ -94,7 +94,7 @@ setInterval(weatherBallonDaily, 3600000);
 
 
 function weatherBallonDaily() {
-  fetch('http://api.openweathermap.org/data/2.5/onecall?lat=58.462970&lon=56.399950&exclude=hourly,minutely' + '&appid=162204f36d92f27a55b386010cb2ccf1')  
+  fetch('https://api.openweathermap.org/data/2.5/forecast?lat=58.462970&lon=56.399950&appid=a061c5cf224dc563e73ce50c27c99bd4')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeatherDaily(data);
