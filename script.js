@@ -156,13 +156,8 @@ function drawWeatherDaily( dnew ) {
 
 
   var celciusnow_day_now = dnew.current.temp_c;
-  var celciusnow_night_now = dnew.current.temp_c;
-  var description_now = dnew.current.condition.text;
-  var icon_now = dnew.current.condition.icon;
-  document.querySelector('.daily_description-now').innerHTML = description_now;
-  document.querySelector('.daily_day-now').innerHTML = 'Днём: ' + celciusnow_day_now + '&deg;';
-  document.querySelector('.daily_night-now').innerHTML = 'Ночью: ' + celciusnow_night_now + '&deg;';
-  document.querySelector('.daily_icon-now').src = 'https:' + icon_now;
+  document.querySelector('.now_temp').innerHTML = celciusnow_day_now + '&deg;';
+
 
   var celciusnow_day_tomorrow = dnew.forecast.forecastday[0].day.maxtemp_c;
   var celciusnow_night_tomorrow = dnew.forecast.forecastday[0].day.mintemp_c;
