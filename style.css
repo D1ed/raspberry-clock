@@ -77,7 +77,7 @@ font-size: 100px;
     top: 65%;
 }
 
-.daily_now, .daily_tomorrow, .daily_after-tomorrow {
+.daily_now, .daily_tomorrow, .daily_after-tomorrow, .daily_after-tomorrow-two, .daily_after-tomorrow-three, .daily_after-tomorrow-four, .daily_after-tomorrow-five, .daily_after-tomorrow-six {
     width: 33%;
     text-align: center;
 }
@@ -87,6 +87,7 @@ font-size: 100px;
     max-width: 128px;
     overflow: hidden;
     display: none;
+
 }
 .now {display: none;}
 
