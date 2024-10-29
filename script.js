@@ -57,8 +57,7 @@ body.onclick = function() {
 
 
 
-weatherBallon();
-setInterval(weatherBallon, 300000);
+
 
 
 function weatherBallon() {
@@ -87,8 +86,7 @@ function drawWeather( d ) {
   
 }
 
-weatherBallonDaily();
-setInterval(weatherBallonDaily, 3600000);
+
 
 
 
@@ -228,14 +226,15 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_day-after-tomorrow-six').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-six').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_icon-after-tomorrow-six').innerHTML = icon_tomorrow;
-  */
+  
 }
 
-window.onload = function() {
-  weatherBallon();
-  weatherBallonDaily();
-}
 
+weatherBallon();
+weatherBallonDaily();
+
+setInterval(weatherBallon, 300000);
+setInterval(weatherBallonDaily, 3600000);
 
 
 
