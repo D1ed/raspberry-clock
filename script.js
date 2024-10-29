@@ -166,7 +166,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-tomorrow').innerHTML = description_tomorrow;
   document.querySelector('.daily_day-tomorrow').innerHTML = 'Днём: ' + celciusnow_day_tomorrow + '&deg;';
   document.querySelector('.daily_night-tomorrow').innerHTML = 'Ночью: ' + celciusnow_night_tomorrow + '&deg;';
-  document.querySelector('.daily_icon-tomorrow').src = 'https:' + icon_tomorrow;
+  document.querySelector('.daily_icon-tomorrow').src = 'http:' + icon_tomorrow;
 
   var celciusnow_day_after_tomorrow = dnew.forecast.forecastday[1].day.maxtemp_c;
   var celciusnow_night_after_tomorrow = dnew.forecast.forecastday[1].day.mintemp_c;
@@ -175,7 +175,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow').innerHTML = description_after_tomorrow;
   document.querySelector('.daily_day-after-tomorrow').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow + '&deg;';
   document.querySelector('.daily_night-after-tomorrow').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow').src = 'https:' + icon_after_tomorrow;
+  document.querySelector('.daily_icon-after-tomorrow').src = 'http:' + icon_after_tomorrow;
   
   var celciusnow_day_after_tomorrow_two = dnew.forecast.forecastday[2].day.maxtemp_c;
   var celciusnow_night_after_tomorrow_two = dnew.forecast.forecastday[2].day.mintemp_c;
@@ -184,7 +184,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow-two').innerHTML = description_after_tomorrow_two;
   document.querySelector('.daily_day-after-tomorrow-two').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_two + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-two').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_two + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow-two').src = 'https:' + icon_after_tomorrow_two;
+  document.querySelector('.daily_icon-after-tomorrow-two').src = 'http:' + icon_after_tomorrow_two;
 
   var celciusnow_day_after_tomorrow_three = dnew.forecast.forecastday[3].day.maxtemp_c;
   var celciusnow_night_after_tomorrow_three = dnew.forecast.forecastday[3].day.mintemp_c;
@@ -193,7 +193,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow-three').innerHTML = description_after_tomorrow_three;
   document.querySelector('.daily_day-after-tomorrow-three').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_three + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-three').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_three + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow-three').src = 'https:' + icon_after_tomorrow_three;
+  document.querySelector('.daily_icon-after-tomorrow-three').src = 'http:' + icon_after_tomorrow_three;
 
   var celciusnow_day_after_tomorrow_four = dnew.forecast.forecastday[4].day.maxtemp_c;
   var celciusnow_night_after_tomorrow_four = dnew.forecast.forecastday[4].day.mintemp_c;
@@ -202,7 +202,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow-four').innerHTML = description_after_tomorrow_four;
   document.querySelector('.daily_day-after-tomorrow-four').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_four + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-four').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_four + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow-four').src = 'https:' + icon_after_tomorrow_four;
+  document.querySelector('.daily_icon-after-tomorrow-four').src = 'http:' + icon_after_tomorrow_four;
 
   var celciusnow_day_after_tomorrow_five = dnew.forecast.forecastday[5].day.maxtemp_c;
   var celciusnow_night_after_tomorrow_five = dnew.forecast.forecastday[5].day.mintemp_c;
@@ -211,7 +211,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow-five').innerHTML = description_after_tomorrow_five;
   document.querySelector('.daily_day-after-tomorrow-five').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_five + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-five').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_five + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow-five').src = 'https:' + icon_after_tomorrow_five;
+  document.querySelector('.daily_icon-after-tomorrow-five').src = 'http:' + icon_after_tomorrow_five;
 
   var celciusnow_day_after_tomorrow_six = dnew.forecast.forecastday[6].day.maxtemp_c;
   var celciusnow_night_after_tomorrow_six = dnew.forecast.forecastday[6].day.mintemp_c;
@@ -220,7 +220,7 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_description-after-tomorrow-six').innerHTML = description_after_tomorrow_six;
   document.querySelector('.daily_day-after-tomorrow-six').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-six').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_six + '&deg;';
-  document.querySelector('.daily_icon-after-tomorrow-six').src = 'https:' + icon_after_tomorrow_six;
+  document.querySelector('.daily_icon-after-tomorrow-six').src = 'http:' + icon_after_tomorrow_six;
   
 }
 
