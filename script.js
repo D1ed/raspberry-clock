@@ -30,8 +30,8 @@ body.onclick = function() {
       if (seconds < 10) seconds = '0' + seconds;
       clock.children[2].innerHTML = seconds;
 
-      let data_now = document.getElementById('data_now');
-      data_now.innerHTML =  date.getMonth();
+      //let data_now = document.getElementById('data_now');
+      //data_now.innerHTML =  date.getMonth();
 
       // let superdata = document.getElementById('YYYYMMDD');
       // let year = date.getYear()+1900;
