@@ -89,15 +89,13 @@ function drawWeather( d ) {
   
 }
 
-
+weatherBallonDaily();
 setInterval(weatherBallonDaily, 3600000);
 
 
 
-
-
 function weatherBallonDaily() {
-  fetch('https://api.weatherapi.com/v1/forecast.json?key=1f43449fc0804e9aa56182711242910&q=ramadi,iq&days=6&lang=ar')  
+  fetch('https://api.weatherapi.com/v1/forecast.json?key=1f43449fc0804e9aa56182711242910&q=58.462971,56.399948&days=6&lang=ru')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
     drawWeatherDaily(data);
@@ -147,30 +145,30 @@ return time;
 
 function drawWeatherDaily( dnew ) {
 
-  let uni_date_first = dnew.daily[2].dt;
+  let uni_date_first = dnew.forecast.forecastday[0].date_epoch;
   document.querySelector('.daily_after-tomorrow_where').innerHTML = convertTimestamp(uni_date_first);
-  let uni_date_two = dnew.daily[3].dt;
+  let uni_date_two = dnew.forecast.forecastday[1].date_epoch;
   document.querySelector('.daily_after-tomorrow-two_where').innerHTML = convertTimestamp(uni_date_two);
-  let uni_date_three = dnew.daily[4].dt;
+  let uni_date_three = dnew.forecast.forecastday[2].date_epoch;
   document.querySelector('.daily_after-tomorrow-three_where').innerHTML = convertTimestamp(uni_date_three);
-  let uni_date_four = dnew.daily[5].dt;
+  let uni_date_four = dnew.forecast.forecastday[3].date_epoch;
   document.querySelector('.daily_after-tomorrow-four_where').innerHTML = convertTimestamp(uni_date_four);
-  let uni_date_five = dnew.daily[6].dt;
+  let uni_date_five = dnew.forecast.forecastday[4].date_epoch;
   document.querySelector('.daily_after-tomorrow-five_where').innerHTML = convertTimestamp(uni_date_five);
-  let uni_date_six = dnew.daily[7].dt;
+  let uni_date_six = dnew.forecast.forecastday[5].date_epoch;
   document.querySelector('.daily_after-tomorrow-six_where').innerHTML = convertTimestamp(uni_date_six);
 
 
-  var celciusnow_day_now = Math.round(parseFloat(dnew.daily[0].temp.day)-273.15);
-  var celciusnow_night_now = Math.round(parseFloat(dnew.daily[0].temp.night)-273.15);
-  var description_now = dnew.daily[0].weather[0].description; 
-  var icon_now = dnew.daily[0].weather[0].icon;
+  var celciusnow_day_now = dnew.forecast.forecastday[0].day.maxtemp_c;
+  var celciusnow_night_now = dnew.forecast.forecastday[0].day.mintemp_c;
+  var description_now = dnew.forecast.forecastday[0].day.condition.text;
+  var icon_now = dnew.forecast.forecastday[0].day.condition.icon;
   document.querySelector('.daily_description-now').innerHTML = description_now;
   document.querySelector('.daily_day-now').innerHTML = 'Днём: ' + celciusnow_day_now + '&deg;';
   document.querySelector('.daily_night-now').innerHTML = 'Ночью: ' + celciusnow_night_now + '&deg;';
-  document.querySelector('.daily_icon-now').src = 'icons/' + icon_now + '.png';
+  document.querySelector('.daily_icon-now').innerHTML = icon_tomorrow;
 
-  var celciusnow_day_tomorrow = Math.round(parseFloat(dnew.daily[1].temp.day)-273.15);
+ /*var celciusnow_day_tomorrow = Math.round(parseFloat(dnew.daily[1].temp.day)-273.15);
   var celciusnow_night_tomorrow = Math.round(parseFloat(dnew.daily[1].temp.night)-273.15);
   var description_tomorrow = dnew.daily[1].weather[0].description; 
   var icon_tomorrow = dnew.daily[1].weather[0].icon;
@@ -232,10 +230,11 @@ function drawWeatherDaily( dnew ) {
   document.querySelector('.daily_day-after-tomorrow-six').innerHTML = 'Днём: ' + celciusnow_day_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_night-after-tomorrow-six').innerHTML = 'Ночью: ' + celciusnow_night_after_tomorrow_six + '&deg;';
   document.querySelector('.daily_icon-after-tomorrow-six').src = 'icons/' + icon_after_tomorrow_six + '.png';
+  */
 }
 
 window.onload = function() {
-  weatherBallon( 565778 );
+  weatherBallon();
   weatherBallonDaily();
 }
 
