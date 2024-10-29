@@ -5,7 +5,7 @@ let pogoda = document.querySelector('.pogoda');
 let daily = document.querySelector('.daily');
 
 body.onclick = function() {
-  pogoda.classList.toggle('hidden');
+  //pogoda.classList.toggle('hidden');
   daily.classList.toggle('hidden');
 };
 
