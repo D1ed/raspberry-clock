@@ -53,10 +53,7 @@ body.onclick = function() {
 //api погоды openweathermap
 
 
-weatherBallon();
-drawWeather();
-weatherBallonDaily();
-drawWeatherDaily();
+
 
 setInterval(weatherBallon, 300000);
 setInterval(drawWeather, 300000);
