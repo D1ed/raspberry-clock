@@ -60,8 +60,6 @@ body.onclick = function() {
 weatherBallon();
 setInterval(weatherBallon, 300000);
 
-    const key = '';
-if(key=='') document.querySelector('.pogoda_container-1_temp').innerHTML = (' ');
 
 function weatherBallon( cityID ) {
   fetch('http://api.openweathermap.org/data/2.5/weather?id=' + '565778'+ '&appid=162204f36d92f27a55b386010cb2ccf1')  
